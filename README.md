@@ -23,8 +23,8 @@ Then set the prefix in the install shell script, copy it to the tensorflow root 
 
 Add these lines to your .bashrc to help cmake and the compiler find the library
 
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/tensorflow_1_9_0/lib
-    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/tensorflow_1_9_0/lib/pkgconfig
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/tensorflow_cc_1_9_0/lib
+    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/tensorflow_cc_1_9_0/lib/pkgconfig
 
 ## How to use
 
