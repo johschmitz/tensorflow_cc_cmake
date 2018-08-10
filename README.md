@@ -8,6 +8,7 @@ First build tensorflow_cc using bazel
 
     git clone https://github.com/tensorflow/tensorflow.git
     cd tensorflow
+    git checkout v1.9.0
     ./configure
     bazel build tensorflow:libtensorflow_cc.so
     bazel build tensorflow:libtensorflow_framework.so
@@ -17,6 +18,13 @@ First build tensorflow_cc using bazel
 Then set the prefix in the install shell script, copy it to the tensorflow root folder and run
 
     sudo ./install_tensorflow_cc.sh
+
+## Environment variables
+
+Add these lines to your .bashrc to help cmake and the compiler find the library
+
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/tensorflow_1_9_0/lib
+    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/tensorflow_1_9_0/lib/pkgconfig
 
 ## How to use
 
